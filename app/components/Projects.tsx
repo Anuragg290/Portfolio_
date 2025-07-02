@@ -30,20 +30,21 @@ const projects = [
     ],
   },
   {
-    title: "Expense Tracker",
+    title: "ResumeXpert",
     description:
-      "A responsive expense tracking application enabling users to log, categorize, and manage daily spending through a clean, interactive interface.",
+      "A full-stack Resume Builder Web Application designed to help users create professional, job-ready resumes through a guided, multi-step interface. The platform provides real-time preview, customizable themes, and downloadable PDF exports.",
     details:
-      "Built with React, Tailwind CSS, and Node.js, utilizing JSON Server as a mock backend for real-time CRUD operations — delivering seamless performance across all devices with an intuitive user experience.",
-    technologies: ["React.js", "Tailwind CSS", "Node.js", "JSON Server", "Chart.js"],
-    date: "Nov 2024",
-    github: "https://github.com/Anuragg290/expense-tracker",
+      "Built using React, Node.js, Express, and MongoDB, the platform includes features like data validation, resume completion tracking, and PDF generation with html2pdf.js.",
+    technologies: ["React.js", "Tailwind CSS", "Node.js", "MongoDB", "JWT","html2Pdf.js"],
+    date: "June 2025",
+    github: "https://github.com/Anuragg290/ResumeXpert",
     featured: true,
     
     images: [
-      "/images/Expense_Dashboard.png",
-      "/images/expense_feature.png",
-      "/images/expense_landing.png",
+      "/images/resume_landing.png",
+      "/images/resume_des.png",
+      "/images/resume_dashboard.png",
+      "/images/resume_layout.png",
    
     ],
   },
