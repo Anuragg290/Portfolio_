@@ -99,7 +99,7 @@ export default function About() {
                 My Journey
               </h3>
               <p className="text-muted-foreground mb-6">
-                Currently pursuing a B.Tech in Computer Science and Engineering at SRM University AP. I'm in my 4th year, 1st semester, with a current GPA of 8.42/10. I have 1 years of hands-on experience in building full-stack applications.
+                Currently pursuing a B.Tech in Computer Science and Engineering at SRM University AP. I'm in my final year, with a current GPA of 8.52/10. I have 1 years of hands-on experience in building full-stack applications.
               </p>
               <p className="text-muted-foreground mb-6">
                I've worked on a variety of projects including UniLink, a professional networking platform for students, and a customer retention analytics system using machine learning. I'm always eager to explore new technologies and take on challenging, real-world problems.
@@ -160,7 +160,7 @@ export default function About() {
                     <p className="text-muted-foreground">SRM University AP</p>
                     <p className="text-sm text-muted-foreground flex items-center gap-2 mt-1">
                       <Calendar className="h-4 w-4" />
-                      Oct 2022 - June 2026 | GPA: 8.42/10
+                      Oct 2022 - June 2026 | GPA: 8.52/10
                     </p>
                   </div>
 
