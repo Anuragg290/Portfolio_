@@ -109,7 +109,7 @@ export default function About() {
             <motion.div variants={itemVariants} className="grid grid-cols-1 gap-4 sm:grid-cols-2">
               <Card className="p-4 text-center hover:shadow-lg transition-shadow border-primary/20">
                 <CardContent className="p-0">
-                  <AnimatedCounter end={8.42} suffix="/10" />
+                  <AnimatedCounter end={8.52} suffix="/10" />
                   <p className="text-sm text-muted-foreground">Current GPA</p>
                 </CardContent>
               </Card>
