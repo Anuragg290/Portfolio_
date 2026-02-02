@@ -86,10 +86,10 @@ export default function Skills() {
   }
 
   return (
-    <section id="skills" className="py-20 bg-gradient-to-b from-secondary/20 to-background relative overflow-hidden">
+    <section id="skills" className="py-16 sm:py-20 bg-gradient-to-b from-secondary/20 to-background relative overflow-hidden">
       <div className="absolute inset-0 bg-grid-pattern opacity-5" />
 
-      <div className="container mx-auto px-4 sm:px-6 lg:px-8 relative z-10">
+      <div className="container mx-auto px-4 sm:px-6 lg:px-8 relative z-10 space-y-10">
         <motion.div
           className="text-center mb-16"
           initial={{ opacity: 0, y: 20 }}

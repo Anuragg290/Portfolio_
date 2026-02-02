@@ -57,10 +57,10 @@ export default function About() {
   }
 
   return (
-    <section id="about" className="py-20 bg-gradient-to-b from-secondary/20 to-background relative overflow-hidden">
+    <section id="about" className="py-16 sm:py-20 bg-gradient-to-b from-secondary/20 to-background relative overflow-hidden">
       <div className="absolute inset-0 bg-grid-pattern opacity-5" />
 
-      <div className="container mx-auto px-4 sm:px-6 lg:px-8 relative z-10">
+      <div className="container mx-auto px-4 sm:px-6 lg:px-8 relative z-10 space-y-10">
         <motion.div
           className="text-center mb-12"
           initial={{ opacity: 0, y: 20 }}
@@ -85,7 +85,7 @@ export default function About() {
           </p>
         </motion.div>
 
-        <div className="grid lg:grid-cols-2 gap-12 items-start">
+        <div className="grid gap-10 lg:grid-cols-2 lg:gap-12 items-start">
           <motion.div
             ref={ref}
             variants={containerVariants}
@@ -106,7 +106,7 @@ export default function About() {
               </p>
             </motion.div>
 
-            <motion.div variants={itemVariants} className="grid grid-cols-2 gap-4">
+            <motion.div variants={itemVariants} className="grid grid-cols-1 gap-4 sm:grid-cols-2">
               <Card className="p-4 text-center hover:shadow-lg transition-shadow border-primary/20">
                 <CardContent className="p-0">
                   <AnimatedCounter end={8.42} suffix="/10" />

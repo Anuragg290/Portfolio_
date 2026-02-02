@@ -18,7 +18,7 @@ export default function Footer() {
           ))}
         </nav>
 
-        <div className="mt-10 flex justify-center space-x-10">
+        <div className="mt-10 flex flex-wrap justify-center gap-6 sm:space-x-10 sm:gap-0">
           <a href="mailto:anuragupta290@gmail.com" className="text-muted-foreground hover:text-primary transition-colors">
             <span className="sr-only">Email</span>
             <Mail className="h-6 w-6" />

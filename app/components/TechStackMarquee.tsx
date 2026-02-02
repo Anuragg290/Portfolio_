@@ -29,7 +29,7 @@ export default function TechStackMarquee() {
         <div className="absolute right-0 top-0 bottom-0 w-20 bg-gradient-to-l from-background to-transparent z-10" />
 
         <motion.div
-          className="flex gap-8 whitespace-nowrap"
+          className="flex whitespace-nowrap gap-4 sm:gap-6 lg:gap-8"
           animate={{ x: ["0%", "-50%"] }}
           transition={{
             repeat: Number.POSITIVE_INFINITY,
@@ -41,7 +41,7 @@ export default function TechStackMarquee() {
           {techStack.map((tech, index) => (
             <motion.div
               key={`first-${index}`}
-              className="flex items-center gap-3 px-6 py-3 bg-card border border-border rounded-full shadow-sm hover:shadow-md transition-shadow min-w-fit"
+              className="flex min-w-fit items-center gap-2 px-4 py-2 sm:gap-3 sm:px-6 sm:py-3 bg-card border border-border rounded-full shadow-sm hover:shadow-md transition-shadow text-sm sm:text-base"
               whileHover={{ scale: 1.05, y: -2 }}
               transition={{ type: "spring", stiffness: 300 }}
             >
@@ -54,7 +54,7 @@ export default function TechStackMarquee() {
           {techStack.map((tech, index) => (
             <motion.div
               key={`second-${index}`}
-              className="flex items-center gap-3 px-6 py-3 bg-card border border-border rounded-full shadow-sm hover:shadow-md transition-shadow min-w-fit"
+              className="flex min-w-fit items-center gap-2 px-4 py-2 sm:gap-3 sm:px-6 sm:py-3 bg-card border border-border rounded-full shadow-sm hover:shadow-md transition-shadow text-sm sm:text-base"
               whileHover={{ scale: 1.05, y: -2 }}
               transition={{ type: "spring", stiffness: 300 }}
             >

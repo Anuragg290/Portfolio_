@@ -35,7 +35,7 @@ export default function ProjectImageCarousel({ images, alt }: ProjectImageCarous
 
   return (
     <div
-      className="relative w-full h-64 md:h-80 lg:h-96 rounded-lg overflow-hidden bg-gray-100 dark:bg-gray-800"
+      className="relative w-full h-56 sm:h-72 md:h-80 lg:h-96 rounded-lg overflow-hidden bg-gray-100 dark:bg-gray-800"
       tabIndex={0}
       onKeyDown={handleKeyDown}
       aria-label={`${alt} image carousel, use arrow keys to navigate`}

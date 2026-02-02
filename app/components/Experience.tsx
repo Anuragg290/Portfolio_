@@ -22,8 +22,8 @@ const experiences = [
 
 export default function Experience() {
   return (
-    <section id="experience" className="py-20 bg-background">
-      <div className="container mx-auto px-4 sm:px-6 lg:px-8">
+    <section id="experience" className="py-16 sm:py-20 bg-background">
+      <div className="container mx-auto px-4 sm:px-6 lg:px-8 space-y-10">
         <motion.div
           className="text-center mb-12"
           initial={{ opacity: 0, y: 20 }}

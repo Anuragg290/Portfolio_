@@ -35,13 +35,13 @@ export default function Hero() {
   }
 
   return (
-    <section className="relative min-h-screen flex items-center justify-center overflow-hidden bg-gradient-to-br from-background via-background to-primary/5">
+    <section className="relative min-h-screen flex items-center justify-center overflow-hidden bg-gradient-to-br from-background via-background to-primary/5 pt-24 pb-14 sm:pb-16 lg:pt-0">
       <ParticleBackground />
       <FloatingElements />
 
-      <div className="relative z-10 mx-auto max-w-7xl px-6 lg:flex lg:items-center lg:gap-x-10 lg:px-8">
+      <div className="relative z-10 mx-auto max-w-7xl px-6 sm:px-8 lg:flex lg:items-center lg:gap-x-10 lg:px-8">
         <motion.div
-          className="mx-auto max-w-2xl lg:mx-0 lg:max-w-lg lg:flex-shrink-0"
+          className="mx-auto max-w-2xl text-center lg:mx-0 lg:max-w-lg lg:flex-shrink-0 lg:text-left"
           variants={containerVariants}
           initial="hidden"
           animate="visible"
@@ -56,32 +56,38 @@ export default function Hero() {
             </Badge>
           </motion.div>
 
-         <motion.h1
-  variants={itemVariants}
-  className="mt-4 text-4xl font-bold tracking-tight text-foreground sm:text-6xl"
->
-  Hi, I'm{" "}
-  <motion.span
-    className="bg-gradient-to-r from-[#FFD700] via-[#FFA500] to-[#FF8C00] bg-clip-text text-transparent"
-    animate={{
-      backgroundPosition: ["0% 50%", "100% 50%", "0% 50%"],
-    }}
-    transition={{
-      duration: 3,
-      repeat: Number.POSITIVE_INFINITY,
-      ease: "linear",
-    }}
-  >
-    Anurag Gupta
-  </motion.span>
-</motion.h1>
+          <motion.h1
+            variants={itemVariants}
+            className="mt-4 text-3xl font-bold tracking-tight text-foreground sm:text-5xl lg:text-6xl"
+          >
+            Hi, I'm{" "}
+            <motion.span
+              className="bg-gradient-to-r from-[#FFD700] via-[#FFA500] to-[#FF8C00] bg-clip-text text-transparent"
+              animate={{
+                backgroundPosition: ["0% 50%", "100% 50%", "0% 50%"],
+              }}
+              transition={{
+                duration: 3,
+                repeat: Number.POSITIVE_INFINITY,
+                ease: "linear",
+              }}
+            >
+              Anurag Gupta
+            </motion.span>
+          </motion.h1>
 
 
-          <motion.p variants={itemVariants} className="mt-6 text-lg leading-8 text-muted-foreground">
+          <motion.p
+            variants={itemVariants}
+            className="mt-6 text-base leading-7 text-muted-foreground sm:text-lg lg:text-left"
+          >
             Computer Science Engineering Student at SRM University AP with expertise in Full Stack Development, AI/ML.. Passionate about building innovative solutions that make a difference.
           </motion.p>
 
-          <motion.div variants={itemVariants} className="mt-6 flex flex-wrap gap-2">
+          <motion.div
+            variants={itemVariants}
+            className="mt-6 flex flex-wrap justify-center gap-2 lg:justify-start"
+          >
             {["Full Stack Developer", "AI/ML Enthusiast"].map((skill, index) => (
               <motion.div
                 key={skill}
@@ -96,7 +102,10 @@ export default function Hero() {
             ))}
           </motion.div>
 
-          <motion.div variants={itemVariants} className="mt-10 flex items-center gap-x-6 flex-wrap">
+          <motion.div
+            variants={itemVariants}
+            className="mt-10 flex flex-wrap items-center justify-center gap-3 sm:gap-6 lg:justify-start"
+          >
             <Button asChild className="group">
               <a href="#contact" className="flex items-center gap-2">
                 Get In Touch
@@ -111,7 +120,10 @@ export default function Hero() {
             </Button>
           </motion.div>
 
-          <motion.div variants={itemVariants} className="mt-8 flex items-center gap-x-6">
+          <motion.div
+            variants={itemVariants}
+            className="mt-8 flex flex-wrap items-center justify-center gap-4 sm:gap-6 lg:justify-start"
+          >
             {[
               { href: "mailto:anuragupta290@gmail.com", Icon: Mail, label: "Email" },
               { href: "tel:+916229052188", Icon: Phone, label: "Phone" },
@@ -135,15 +147,15 @@ export default function Hero() {
         </motion.div>
 
         <motion.div
-          className="mx-auto mt-16 lg:mt-0"
+          className="mx-auto mt-16 flex justify-center lg:mt-0"
           initial={{ opacity: 0, x: 100, scale: 0.8 }}
           animate={{ opacity: 1, x: 0, scale: 1 }}
           transition={{ duration: 0.8, delay: 0.6 }}
         >
           <Card className="relative overflow-hidden border-2 border-primary/20 bg-gradient-to-br from-background to-primary/5">
-            <CardContent className="p-8">
+            <CardContent className="p-6 sm:p-8">
               <motion.div
-                className="relative w-[300px] h-[300px] rounded-full overflow-hidden border-4 border-primary/20 mx-auto"
+                className="relative h-[220px] w-[220px] rounded-full overflow-hidden border-4 border-primary/20 sm:h-[260px] sm:w-[260px] lg:h-[300px] lg:w-[300px] mx-auto"
                 whileHover={{ scale: 1.05 }}
                 transition={{ duration: 0.3 }}
               >
@@ -158,7 +170,7 @@ export default function Hero() {
                 <div className="absolute inset-0 bg-gradient-to-t from-primary/10 to-transparent" />
               </motion.div>
 
-              <div className="mt-6 grid grid-cols-2 gap-4 text-center">
+              <div className="mt-6 grid grid-cols-1 gap-4 text-center sm:grid-cols-2">
                 <div>
                   <AnimatedCounter end={400} suffix="+" />
                   <p className="text-sm text-muted-foreground">Problems Solved</p>
